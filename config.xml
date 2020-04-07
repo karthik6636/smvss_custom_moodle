@@ -157,9 +157,8 @@
     </plugin>
     <plugin name="cordova-plugin-device" spec="2.0.3" src="npm" />
     <plugin name="cordova-plugin-file" spec="^6.0.2" src="npm" />
-    <plugin name="cordova-plugin-file-opener2" spec="~2.2.1" src="npm" >
-        <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
-    </plugin>
+    <plugin name="cordova-plugin-file-opener2" spec="https://github.com/neptsoft/cordova-plugin-file-opener2" source="git" src="git" />
+       
     <plugin name="cordova-plugin-file-transfer" spec="1.7.1" src="npm" />
     <plugin name="cordova-plugin-geolocation" spec="^4.0.2" src="npm">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="We need your location so you can attach it as part of your submissions." />
