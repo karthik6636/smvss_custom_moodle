@@ -17,6 +17,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="phonegap-version" value="cli-7.1.0" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="false" />
@@ -190,6 +191,6 @@
     <config-file parent="FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED" target="*-Info.plist">
         <string>YES</string>
     </config-file>
-    <engine name="android" spec="^8.0.0" />
-    <engine name="ios" spec="^5.0.1" />
+    <engine name="android" spec="8.0.0" />
+    <engine name="ios" spec="5.0.1" />
 </widget>
