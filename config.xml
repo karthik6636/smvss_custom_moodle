@@ -177,7 +177,7 @@
     <plugin name="cordova-sqlite-storage" spec="https://github.com/karthik6636/cordova-sqlite-storage.git#smvsssqlite" />
     <plugin name="nl.kingsquare.cordova.background-audio" spec="1.0.1" src="npm" />
     
-    <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']">
+    <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='SmvssMoodle']">
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|screenLayout|smallestScreenSize" android:debuggable="false" />
     </edit-config>
     <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
