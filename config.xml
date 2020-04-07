@@ -39,6 +39,7 @@
     <preference name="LoadUrlTimeoutValue" value="60000" />
     <preference name="CustomURLSchemePluginClearsAndroidIntent" value="true" />
     <preference name="phonegap-version" value="cli-7.1.0" />
+    <preference name="pgb-builder-version" value="2" />
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
