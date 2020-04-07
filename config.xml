@@ -74,13 +74,7 @@
         <resource-file src="resources/android/splash/drawable-port-xxhdpi-screen.png" target="app/src/main/res/drawable-port-xxhdpi/screen.png" />
         <resource-file src="resources/android/splash/drawable-port-xxxhdpi-screen.png" target="app/src/main/res/drawable-port-xxxhdpi/screen.png" />
         <resource-file src="resources/values/colors.xml" target="/app/src/main/res/values/colors.xml" />
-        <icon background="@color/background" density="ldpi" foreground="resources/android/icon/ldpi_foreground.png" src="resources/android/icon/drawable_ldpi_icon.png" />
-        <icon background="@color/background" density="mdpi" foreground="resources/android/icon/mdpi_foreground.png" src="resources/android/icon/drawable_mdpi_icon.png" />
-        <icon background="@color/background" density="hdpi" foreground="resources/android/icon/hdpi_foreground.png" src="resources/android/icon/drawable_hdpi_icon.png" />
-        <icon background="@color/background" density="xhdpi" foreground="resources/android/icon/xhdpi_foreground.png" src="resources/android/icon/drawable_xhdpi_icon.png" />
-        <icon background="@color/background" density="xxhdpi" foreground="resources/android/icon/xxhdpi_foreground.png" src="resources/android/icon/drawable_xxhdpi_icon.png" />
-        <icon background="@color/background" density="xxxhdpi" foreground="resources/android/icon/xxxhdpi_foreground.png" src="resources/android/icon/drawable_xxxhdpi_icon.png" />
-               <config-file parent="/manifest/application" target="AndroidManifest.xml">
+          <config-file parent="/manifest/application" target="AndroidManifest.xml">
             <provider android:authorities="${applicationId}.opener.provider" android:exported="false" android:grantUriPermissions="true" android:name="io.github.pwlin.cordova.plugins.fileopener2.FileProvider">
                 <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/opener_paths" />
             </provider>
