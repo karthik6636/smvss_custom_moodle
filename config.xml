@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.custom.custommoodle" version="1.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.moodle.moodlemobile" version="1.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Smvss Moodle</name>
     <description>Smvss Moodle official app</description>
     <author email="mobile@moodle.com" href="http://moodle.com">Moodle Mobile team</author>
@@ -34,8 +34,8 @@
     <preference name="iosPersistentFileLocation" value="Compatibility" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="10000" />
-    <preference name="SplashMaintainAspectRatio" value="true|false" />
-    <preference name="SplashShowOnlyFirstTime" value="true|false" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="AutoHideSplashScreen" value="true"/>
     <preference name="LoadUrlTimeoutValue" value="60000" />
     <preference name="CustomURLSchemePluginClearsAndroidIntent" value="true" />
@@ -178,7 +178,10 @@
     <plugin name="cordova-plugin-zip" spec="3.1.0" src="npm" />
     <plugin name="cordova-sqlite-storage" spec="https://github.com/karthik6636/cordova-sqlite-storage.git#smvsssqlite" />
     <plugin name="nl.kingsquare.cordova.background-audio" spec="1.0.1" src="npm" />
-    
+    <plugin name="phonegap-plugin-push" spec="https://github.com/moodlemobile/phonegap-plugin-push.git#moodle-v3">
+        <variable name="ANDROID_SUPPORT_V13_VERSION" value="27.+" />
+        <variable name="FCM_VERSION" value="17.5.+" />
+    </plugin>
     <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='SmvssMoodle']">
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|screenLayout|smallestScreenSize" android:debuggable="true" />
     </edit-config>
